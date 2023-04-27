@@ -1,0 +1,528 @@
+/*
+------------------- RESET DA MODELO -------------------
+*/
+#titulos,
+.conteudos-nav {
+	display: none !important;
+	visibility: hidden !important;
+}
+.corpo,
+.conteudos {
+	margin: 0;
+	max-width: 2000px;
+	padding: 0;
+}
+/*
+----------------------- BANNERS -----------------------
+*/
+.titulos-e-banners .owl-carousel {
+	margin: 0 auto;
+	max-width: 2000px;
+	overflow: visible;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.titulos-e-banners .owl-controls {
+	bottom: 1px;
+	margin-top: 0;
+	position: absolute;
+	width: 100%;
+}
+/*
+------------------ CURSOS + CALENDARIO -------------------
+*/
+.cursos-container-geral {
+	background: url(../img/home-cursos-fundo.jpg) no-repeat center top;
+	background-size: cover;
+	margin-bottom: 15px;
+	padding: 30px 0;
+	position: relative;
+}
+.cursos-container {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	width: 100%;
+}
+/*
+------------------------ CURSOS --------------------------
+*/
+.cursos {
+	display: inline-block;
+	margin-right: 2%;
+	max-width: 720px;
+	position: relative;
+	vertical-align: top;
+}
+.cursos header {
+	border-bottom: solid 1px #dadade;
+	display: block;
+	margin-bottom: 15px;
+	padding-bottom: 7px;
+	position: relative;
+	width: 100%;
+}
+.cursos header:after {
+	background: #3695eb;
+	bottom: -1px;
+	content: '';
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 61px;
+}
+.cursos header h1 {
+	color: #3695eb;
+	display: inline;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.5rem;
+	margin-bottom: 8px;
+	max-width: 380px;
+	padding-left: 31px;
+	position: relative;
+}
+.cursos header h1:before {
+	color: #359d7e;
+	content: '\f274';
+	font-family: 'FontAwesome';
+	font-size: 2.5rem;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 22px;
+}
+.cursos-link {
+	color: #0f6bac;
+	float: right;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.8rem;
+}
+.curso {
+	background: #ffffff;
+	border: solid 1px #e6e5e5;
+	margin: 20px auto;
+	padding: 15px 7px;
+	padding-left: 54px;
+	position: relative;
+}
+.curso:before {
+	color: #eae075;
+	content: '\f249';
+	font-family: 'FontAwesome';
+	font-size: 3rem;
+	height: 18px;
+	left: 8px;
+	position: absolute;
+	top: 12px;
+	width: 22px;
+}
+.curso h2 {
+	font-family: 'Asap', sans-serif;
+	font-size: 1.8rem;
+	padding: 0;
+	margin: 0;
+}
+.curso h2 a {
+	color: #000000;
+}
+/*
+---------------------- CALENDARIO ------------------------
+*/
+.calendario-container {
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 300px;
+	position: relative;
+	text-align: center;
+}
+.calendario-container header {
+	border-bottom: solid 1px #dadade;
+	display: block;
+	margin-bottom: 15px;
+	padding-bottom: 7px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+.calendario-container header:after {
+	background: #920000;
+	bottom: -1px;
+	content: '';
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 61px;
+}
+.calendario-container header h1 {
+	color: #920000;
+	display: inline;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.5rem;
+	margin-bottom: 8px;
+	max-width: 380px;
+	padding-left: 31px;
+	position: relative;
+}
+.calendario-container header h1:before {
+	color: #2087cf;
+	content: '\f073';
+	font-family: 'FontAwesome';
+	font-size: 2.5rem;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 22px;
+}
+.calendario-container img {
+	display: inline;
+	margin: 0 auto;
+}
+/*
+------------------------- LOJA ---------------------------
+*/
+.loja-container {
+	background: #ebfbf6;
+	position: relative;
+}
+.loja-container header {
+	background: #ffffff;
+	padding: 0 2%;
+	padding-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+.loja-container header h1 {
+	color: #359d7e;
+	display: block;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.5rem;
+	margin: 0 auto;
+	max-width: 1114px;
+	padding: 0 2%;
+	padding-bottom: 8px;
+	padding-left: 32px;
+	position: relative;
+	width: 100%;
+}
+.loja-container header h1:before {
+	color: #e3e3e3;
+	content: '\f07a';
+	font-family: 'FontAwesome';
+	font-size: 2.5rem;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 22px;
+}
+.loja-container header span {
+	background: #dadade;
+	bottom: -2px;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	max-width: 1114px;
+	position: relative;
+	width: 100%;
+}
+.loja-container header span:before {
+	background: #359d7e;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 2px;
+	left: 0;
+	max-width: 61px;
+	position: absolute;
+	width: 100%;
+}
+.loja {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	padding-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+.loja-item {
+	border: solid 1px transparent;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	display: inline-block;
+	margin: 25px 2.5%;
+	max-width: 200px;
+	padding: 12px 4px;
+}
+.loja-item:hover,
+.loja-item:focus {
+	background: rgba(255,255,255,0.32);
+	border: solid 1px #359d7e;
+}
+.loja-item a {
+}
+.loja-item a:hover,
+.loja-item a:focus {
+	text-decoration: none;
+}
+.loja-item img {
+	display: block;
+	margin: 0 auto;
+}
+.loja-item h2 {
+	color: #000101;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.4rem;
+}
+.loja-link {
+	background: #359d7e;
+	border: solid 1px transparent;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	color: #ffffff;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.6rem;
+	max-width: 140px;
+	padding: 4px 12px;
+	padding-left: 35px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+.loja-link:before {
+	color: #ffffff;
+	content: '\f07a';
+	font-family: 'FontAwesome';
+	font-size: 1.8rem;
+	height: 18px;
+	left: 10px;
+	position: absolute;
+	top: 0;
+	width: 22px;
+}
+.loja-link:hover,
+.loja-link:focus {
+	background: transparent;
+	border: solid 1px #359d7e;
+	color: #359d7e;
+}
+.loja-link:hover:before,
+.loja-link:focus:before {
+	color: #359d7e;
+}
+#loja .owl-pagination {
+	bottom: -15px;
+	margin-top: 0;
+	position: absolute;
+	width: 100%;
+}
+#loja .owl-controls .owl-page span {
+	background: transparent;
+	border: solid 1px #851114;
+}
+#loja .owl-controls .active span {
+	background: #851114;
+}
+/*
+------------------------ CLINICA -------------------------
+*/
+.clinica {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	max-width: 1170px;
+	padding: 0 2%;
+	width: 100%;
+}
+.clinica header {
+	border-bottom: solid 1px #dadade;
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+	width: 100%;
+}
+.clinica header:after {
+	background: #359d7e;
+	bottom: -1px;
+	content: '';
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 61px;
+}
+.clinica header h1 {
+	color: #359d7e;
+	display: block;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.5rem;
+	margin-bottom: 8px;
+	padding-left: 31px;
+	position: relative;
+}
+.clinica header h1:before {
+	color: #2087cf;
+	content: '\f1ad';
+	font-family: 'FontAwesome';
+	font-size: 2.8rem;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 22px;
+}
+.clinica-fotos,
+.clinica-texto {
+	display: inline-block;
+	position: relative;
+	width: 48%;
+}
+.clinica-fotos {
+}
+.clinica-miniaturas {
+	bottom: 8px;
+	left: 0;
+	max-width: 489px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.clinica-miniatura {
+	box-shadow: 0.5px 0.866px 1px 0px rgba(7, 4, 8, 0.294);
+	display: inline-block;
+	margin: 0 0.5%;
+	max-height: 65px;
+	max-width: 150px;
+	width: 100%;
+}
+.clinica-texto {
+	color: #3c3935;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.4rem;
+}
+.clinica-texto h2 {
+	color: #0f6bac;
+	font-size: 2rem;
+}
+.clinica-link {
+	color: #3c3935;
+	text-transform: uppercase;
+}
+.clinica-link:hover,
+.clinica-link:focus {
+	color: #359d7e;
+	text-decoration: none;
+}
+
+/*
+----------------------- PARCEIROS ------------------------
+*/
+.parceiros {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	max-width: 1170px;
+	padding: 0 2%;
+	width: 100%;
+}
+.parceiros header {
+	border-bottom: solid 1px #dadade;
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+	width: 100%;
+}
+.parceiros header:after {
+	background: #f18903;
+	bottom: -1px;
+	content: '';
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 61px;
+}
+.parceiros header span {
+	color: #f18903;
+	display: block;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.5rem;
+	margin-bottom: 8px;
+	padding-left: 31px;
+	position: relative;
+}
+.parceiros header span:before {
+	color: #015996;
+	content: '\f234';
+	font-family: 'FontAwesome';
+	font-size: 2rem;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 22px;
+}
+.parceiros .owl-pagination {
+	bottom: -50px;
+	margin-top: 0;
+	position: absolute;
+	width: 100%;
+}
+.parceiros .owl-theme .owl-controls .owl-page span {
+	background: transparent;
+	border: solid 1px #5fbce8;
+}
+.parceiros .owl-theme .owl-controls .active span {
+	background: #5fbce8;
+}
+
+/*
+----------------------- MEDIA QUERIES ------------------------
+*/
+@media screen and (max-width:1100px) {
+.cursos {
+	max-width: 1100px;
+	width: 65%;
+}
+.clinica-fotos,
+.clinica-texto {
+	display: block;
+	width: 100%;
+}
+.clinica-fotos {
+	margin: 15px auto;
+	max-width: 490px;
+}
+}
+@media screen and (max-width:930px) {
+.cursos {
+	width: 62%;
+}
+}
+@media screen and (max-width:850px) {
+.cursos {
+	width: 56%;
+}
+}
+@media screen and (max-width:767px) {
+.cursos,
+.calendario-container {
+	display: block;
+	margin: 0 auto;
+}
+.cursos {
+	width: 100%;
+}
+}
+@media screen and (max-width:500px) {
+.clinica-miniaturas {
+	opacity: .5;
+}
+.clinica-miniaturas:hover,
+.clinica-miniaturas:focus {
+	opacity: 1;
+}
+.clinica-miniatura {
+	max-width: 65px;
+}
+}

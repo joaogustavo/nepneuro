@@ -1,0 +1,303 @@
+/*
+------------------- MENU PRINCIPAL DESKTOP -------------------
+*/
+.navegacao { /* container geral */
+	background: #0f6bac;
+	border-bottom: solid 1px transparent;
+	box-shadow: 1px 1.732px 8px 0px rgba(2, 4, 0, 0.275);
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	height: 66px;
+	letter-spacing: normal;
+	line-height: 2rem;
+	margin: 0 auto;
+	max-height: 66px;
+	max-width: 2000px;
+	position: relative;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 200 !important;
+}
+
+.navegacao ul { /* container centralizado */
+	display: flex;
+	flex-wrap: wrap;
+	float: none;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	position: relative;
+	-webkit-margin-before: 0px;-webkit-margin-after: 0px;-webkit-margin-start: auto;-webkit-margin-end: auto;-webkit-padding-start: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 2;
+}
+.navegacao ul li { /* item */
+	display: inline-block;
+	position: relative;
+}
+.navegacao ul li a { /* menu link */
+	color: #ffffff;
+	display: block;
+	margin: 0;
+	padding: 22px 25px;
+	position: relative;
+	text-decoration: none;
+}
+.navegacao ul li:first-child a { /* retirando margem esquerda primeiro item */
+	margin-left: 0 !important;
+}
+.navegacao ul li:last-child a { /* retirando margem direita ultimo item */
+	margin-right: 0 !important;
+}
+.navegacao ul li a:hover,  /* menu link hover */
+.navegacao ul li a:focus { /* menu link focus */
+	color: #639fc9;
+	outline: none !important;
+}
+.navegacao ul li a:before { /* hover sublinhado superiores */
+	background: #920000 !important;
+}
+
+/*
+-------------- MENU PRINCIPAL DESKTOP TRANSICAO SCROLL -------------
+*/
+.navegacao-fixa {
+	background: #0f6bac;
+	font-size: 1.8rem;
+	height: 34px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	width: 100%;
+}
+.navegacao-fixa ul li a {
+	padding: 6px 25px;
+}
+/*
+--------------- MENU MOBILE RESET DO MODAL BOOTSTRAP ---------------
+*/
+.menu-mobile-open{overflow: hidden;}.menu-mobile {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;display: none;overflow: hidden;-webkit-overflow-scrolling: touch;outline: 0;}.menu-mobile.fade-menu-mobile.menu-mobile-dialog{-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: translate(0, -25%);-ms-transform: translate(0, -25%);-o-transform: translate(0, -25%);transform: translate(0, -25%);}.menu-mobile.in.menu-mobile-dialog{-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);-o-transform: translate(0, 0);transform: translate(0, 0);}.menu-mobile-open .menu-mobile{overflow-x: hidden;overflow-y: auto;}.menu-mobile-dialog{position: relative;width: auto;margin: 0;}.menu-mobile-content {position: relative;background-color: transparent;-webkit-background-clip: padding-box;background-clip: padding-box;border: none;border: none;outline: 0;-webkit-box-shadow: none;box-shadow: none;}.modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1040;background-color: #f8f8f8;}.menu-mobile-body,.menu-mobile-body .menu-movel,.menu-mobile-header,.menu-mobile-title{position:relative;z-index:1000}.modal-backdrop.fade{filter:alpha(opacity=0);opacity:0}.modal-backdrop.in{filter:alpha(opacity=50);opacity:.99}.menu-mobile-header{border-bottom:none;padding:20px;text-align:right}.modal-header .fechar{margin-top:-2px}.menu-mobile-title{line-height:1.42857143;margin:0}.menu-mobile-body{padding:0}.menu-mobile-footer{display:none;visibility:hidden}@media (min-width:768px){.menu-mobile-dialog{width:600px;margin:0}.menu-mobile-content{-webkit-box-shadow:none;box-shadow:none}.menu-mobile-sm{width:300px}}@media (min-width:992px){.menu-mobile-lg{width:900px}}
+
+/*
+----------------- MENU AJUSTES DE MEDIA QUERIES ----------------
+*/
+@media screen and (max-width:1090px) {
+.navegacao { /* container geral */
+	font-size: 1.8rem;
+}
+.navegacao ul li a { /* menu link */
+	padding-left: 11px;
+	padding-right: 11px;
+}
+}
+@media screen and (max-width:970px) {
+.navegacao { /* container geral */
+	font-size: 1.6rem;
+}
+}
+@media screen and (max-width:890px) {
+.navegacao ul li a { /* menu link */
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+}
+}
+@media screen and (max-width:820px) {
+.navegacao { /* container geral */
+	font-size: 1.4rem;
+}
+.navegacao ul li a { /* menu link */
+	padding-left: 15px;
+	padding-right: 15px;
+}
+}
+
+/*
+------------------------- MENU MOBILE --------------------------
+*/
+@media screen and (max-width: 767px) and (min-width: 176px) {
+#nav-mobile {
+	height: 40px;
+	margin-right: .5rem;
+	margin-top: 1.44rem;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40px;
+	z-index: 52;
+}
+#nav-mobile {
+	position: fixed;
+	z-index: 60;
+}
+.logo-mobile-menu {
+	margin-top: 0.7857em;
+	max-width: 179px;
+}
+/* botao fechar (menu) */
+.fechar {
+	max-width: 40px;
+	position: absolute;
+	right: .5em;
+	top: 0px;
+	width: 13%;
+}
+.fechar img {
+	margin-right: .5em;
+	margin-top: 1.44rem;
+	width: 100%;
+}
+/* menu movel */
+.menu-movel {
+	list-style: none;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	padding-left: 0px;
+	text-align: center;
+}
+.menu-movel li a {
+	color: #0f6bac;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.3rem;
+	display: block;
+	letter-spacing: -.02rem;
+	line-height: 4rem;
+	margin-top: .2rem;
+	padding: .01rem 1rem;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.11);
+	vertical-align: middle;
+}
+.menu-movel li a:hover {
+	background: #0f6bac;
+	color: #ffffff;
+	text-decoration: none;
+}
+}
+
+/*
+-------------- RESET MODAL BOOTSTRAP NO MENU MOBILE ATIVO --------------
+*/
+.menu-mobile{padding-left: 0 !important;padding-right: 0 !important;}
+
+/*
+---------------------- MARCACAO DE PAGINA NO MENU ----------------------
+*/
+/*
+------------------------- pagina quem somos -------------------------
+*/
+.pg-quemsomos .navegacao ul li .menu-quemsomos {
+	color: #3F9CC7;
+	position: relative;
+}
+.pg-quemsomos .navegacao ul li .menu-quemsomos:before {
+	background: #920000;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.pg-quemsomos .menu-movel li .menu-quemsomos {
+	background: #0f6bac;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina a clinica -------------------------
+*/
+.pg-clinica .navegacao ul li .menu-clinica {
+	color: #3F9CC7;
+	position: relative;
+}
+.pg-clinica .navegacao ul li .menu-clinica:before {
+	background: #920000;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.pg-clinica .menu-movel li .menu-clinica {
+	background: #0f6bac;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina cursos -------------------------
+*/
+.pg-cursos .navegacao ul li .menu-cursos {
+	color: #3F9CC7;
+	position: relative;
+}
+.pg-cursos .navegacao ul li .menu-cursos:before {
+	background: #920000;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.pg-cursos .menu-movel li .menu-cursos {
+	background: #0f6bac;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina noticias -------------------------
+*/
+.pg-noticias .navegacao ul li .menu-noticias {
+	color: #3F9CC7;
+	position: relative;
+}
+.pg-noticias .navegacao ul li .menu-noticias:before {
+	background: #920000;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.pg-noticias .menu-movel li .menu-noticias {
+	background: #0f6bac;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+------------------------- pagina fale conosco -------------------------
+*/
+.pg-fale .navegacao ul li .menu-fale {
+	color: #3F9CC7;
+	position: relative;
+}
+.pg-fale .navegacao ul li .menu-fale:before {
+	background: #920000;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.pg-fale .menu-movel li .menu-fale {
+	background: #0f6bac;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+--------------------- pagina portal do aluno -------------------------
+*/
+.pg-portal .menu-portal {
+	display: none;
+	visibility: hidden;
+}

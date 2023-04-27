@@ -1,0 +1,649 @@
+/*
+-------------------------- RESET + HOVER --------------------------
+*/
+@import url("normalize.css");
+@import url("hover.css");
+/*
+---------------------------- WEBFONTS -----------------------------
+*/
+@import url("webfonts.css");
+/*
+------------------------------ MENU -------------------------------
+*/
+@import url("menu.css");
+/*
+---------------------- REDEFINICAO CSS GLOBAL ---------------------
+*/
+html {font-size: 62.5%;}
+*{text-rendering: optimizeLegibility;}
+::selection{background: #0f6bac;color: #ffffff;}
+::-moz-selection{background: #0f6bac;color: #ffffff;}
+body {
+	background: #002138;
+	color: #3c3935;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: 2000px;
+	min-width: 280px;
+	position: relative;
+	z-index: 2;
+}
+/*
+------------------- CSS OCULTAR MOBILE EM DESKTOP ------------------
+*/
+@media screen and (min-width: 768px){.mobile{display: none !important;visibility: hidden !important;}}
+/*
+------------------- ESTRUTURA SECOES + ELEMENTOS -------------------
+*/
+.oculto{
+	display: none !important;
+	visibility: hidden !important;
+}
+.banners.corpo,.titulos,.conteudos,#rodape,.rodape{box-sizing: border-box;overflow: visible;position: relative;z-index: 5;}
+#topo {
+	background: url(../img/topo.jpg) no-repeat center top #ffffff;
+	max-width: 2000px;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+.topo {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	position: relative;
+	width: 100%;
+}
+#logo {
+	display: inline-block;
+	margin: 38px auto 42px 2%;
+	margin-top: 38px;
+	max-width: 420px;
+	position: relative;
+	width: 100%;
+	z-index: 300;
+}
+.logo {
+	background: url(../img/logo.png) no-repeat left top;
+	background-size: contain;
+	display: block;
+	height: 103px;
+	max-width: 420px;
+	text-indent: -9999px;
+	width: 100%;
+}
+.links-topo {
+	-webkit-display: -webkit-box;
+	-webkit-display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	float: right;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.4rem;
+	justify-content: space-between;
+	margin-right: 2%;
+	margin-top: 71px;
+	max-width: 360px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.links-topo a {
+	display: inline-block;
+}
+.menu-portal {
+	margin: 0;
+	margin-right: 2%;
+	padding-left: 48px;
+	position: relative;
+}
+.menu-portal {
+	color: #0f6bac;
+}
+.menu-portal:hover,
+.menu-portal:focus {
+	color: #0f6bac;
+	outline: none;
+	text-decoration: none;
+}
+
+.menu-portal:before {
+	background: #0f6bac;
+	border: solid 1px #0f6bac;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	color: #ffffff;
+	content: '\f19d';
+	font-family: 'FontAwesome';
+	font-size: 2rem;
+	height: 40px;
+	left: 0;
+	line-height: 4rem;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 40px;
+}
+.menu-portal span {
+	display: block;
+	font-size: 2.3rem;
+	line-height: 1.2rem;
+}
+.menu-atendimento {
+	margin: 0;
+	margin-right: 2%;
+	padding-left: 48px;
+	position: relative;
+}
+.menu-atendimento {
+	color: #359d7e;
+}
+.menu-atendimento:hover,
+.menu-atendimento:focus {
+	color: #359d7e;
+	outline: none;
+	text-decoration: none;
+}
+
+.menu-atendimento:before {
+	background: #359d7e;
+	border: solid 1px #359d7e;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	color: #ffffff;
+	content: '\f086';
+	font-family: 'FontAwesome';
+	font-size: 2.5rem;
+	height: 40px;
+	left: 0;
+	line-height: 3.8rem;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 40px;
+}
+.menu-atendimento span {
+	display: block;
+	font-size: 2.75rem;
+	line-height: 1.5rem;
+}
+.banners-e-titulos {
+	background: #ffffff;
+	max-width: 2000px;
+	position: relative;
+	width: 100%;
+}
+#titulos {
+	background: #ffffff;
+	border-bottom: solid 2px transparent;
+	padding: 15px 0;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+#titulos:after {
+	background-image: -moz-linear-gradient( 0deg, rgb(206,218,226) 51%, rgb(48,127,179) 51%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(206,218,226) 51%, rgb(48,127,179) 51%);
+	background-image: -ms-linear-gradient( 0deg, rgb(206,218,226) 51%, rgb(48,127,179) 51%);
+	bottom: -2px;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.titulos {
+	color: #0773be;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+	letter-spacing: -.2rem;
+	line-height: 1rem;
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 2%;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	z-index: 9;
+}
+.titulos span,
+.titulos h1,
+.titulos h2,
+.titulos h3,
+.titulos h4,
+.titulos h5,
+.titulos h6 {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	vertical-align: middle;
+	z-index: 20;
+}
+.titulos h1,
+.titulos span {
+	font-size: 3rem;
+}
+.titulos h2 {
+	font-size: 2.5rem;
+}
+.titulos h3 {
+	font-size: 2rem;
+}
+.titulos h4 {
+	font-size: 1.8rem;
+}
+.titulos h5 {
+	font-size: 1.5rem;
+}
+.titulos h6 {
+	font-size: 1.2rem;
+}
+.corpo {
+	background: #ffffff;
+	display: block;
+	margin: 0 auto;
+	max-width: 2000px;
+	padding: 15px 0;
+	padding-top: 5px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.conteudos {
+	font-size: 1.6rem;
+	letter-spacing: .05rem;
+	line-height: 2.7rem;
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 2%;
+	padding-top: 10px;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.conteudos-nav {
+	background: #ffffff;
+	margin: 0 auto;
+	max-width: 2000px;
+	padding: 15px 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+.conteudos-nav:before {
+	background-image: -moz-linear-gradient( 0deg, rgb(206,218,226) 51%, rgb(48,127,179) 51%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(206,218,226) 51%, rgb(48,127,179) 51%);
+	background-image: -ms-linear-gradient( 0deg, rgb(206,218,226) 51%, rgb(48,127,179) 51%);
+	content: '';
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: -2px;
+	width: 100%;
+}
+.conteudos-nav a {
+	color: #0f6bac;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	max-width: 260px;
+	padding: 0 2%;
+	position: relative;
+	text-align: center;
+	text-shadow: 2.229px 2.007px 1px rgba(4, 4, 4, 0.129);
+	width: 100%;
+}
+.conteudos-nav a:hover,
+.conteudos-nav a:focus {
+	text-decoration: none;
+}
+#rodape {
+	background-image: -moz-linear-gradient( 90deg, rgb(0,33,56) 68%, rgb(0,33,56) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(0,33,56) 68%, rgb(0,33,56) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(0,33,56) 68%, rgb(0,33,56) 100%);
+	color: #003061;
+	margin: 0 auto;
+	max-width: 2000px;
+	padding: 30px 2%;
+	width: 100%;
+}
+#rodape a:hover {
+	text-decoration: none;
+}
+.rodape {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	width: 100%;
+}
+.rodape-linha1 {
+	-webkit-display: -webkit-box;
+	-webkit-display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-bottom: 28px;
+	width: 100%;
+}
+.rodape-contatos {
+	display: inline-block;
+	max-width: 400px;
+}
+.rodape-logo {
+	display: block;
+	margin-bottom: 25px;
+	max-width: 301px;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.endereco {
+	color: #ffffff;
+	display: block;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.8rem;
+	max-width: 400px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.endereco a:hover,
+.endereco a:focus {
+	color: #278dc1;
+}
+.rodape-telefone {
+	color: #ffffff;
+	display: block;
+	font-family: 'Asap', sans-serif;
+	font-size: 1.8rem;
+	letter-spacing: -.2rem;
+	line-height: 4rem;
+	margin: 0;
+	margin-top: 15px;
+	max-width: 210px;
+	padding: 0;
+	padding-left: 39px;
+	position: relative;
+	width: 100%;
+}
+.rodape-telefone:before {
+	color: #afc5dd;
+	content: '\f095';
+	font-family: 'FontAwesome';
+	font-size: 3rem;
+	height: 29px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 29px;
+}
+.rodape-telefone span {
+	display: inline-block;
+	font-size: 3rem;
+	padding-left: 5px;
+}
+.rodape-telefone:hover,
+.rodape-telefone:focus {
+	color: #ffffff;
+}
+.localizacao {
+	float: right;
+	margin-top: 14px;
+	max-width: 394px;
+	width: 100%;
+}
+.localizacao div {
+	color: #afc5dd;
+	font-family: 'Asap', sans-serif;
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	width: 100%;
+}
+.localizacao div:before {
+	color: #851114;
+	font-size: 2rem;
+	left: 0;
+	right: auto;
+	top: 3px;
+}
+.localizacao div span {
+	background: #dadade;
+	bottom: -2px;
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.localizacao div span:before {
+	background: #851114;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 2px;
+	left: 0;
+	max-width: 61px;
+	position: absolute;
+	width: 100%;
+}
+.redes-sociais {
+	margin: 0 auto;
+	max-width: 500px;
+	padding: 0 2%;
+	text-align: center;
+	width: 100%;
+}
+.rede-social {
+	border: solid 1px #0f6bac;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	color: #0f6bac;
+	display: inline-block;
+	font-family: 'FontAwesome';
+	font-size: 2rem;
+	height: 35px;
+	line-height: 3.3rem;
+	margin: 8px;
+	position: relative;
+	text-align: center;
+	width: 35px;
+}
+.rede-social:hover,
+.rede-social:focus {
+	border: solid 1px #ffffff;
+	color: #ffffff;
+}
+.gosites {
+	float: right;
+	margin: 0 auto;
+	margin-right: 2%;
+	margin-top: -35px;
+	max-width: 77px;
+	width: 100%;
+}
+.subir {
+	bottom: 80px;
+	display: block;
+	height: 60px;
+	max-width: 45px;
+	position: fixed;
+	right: 3%;
+	width: 100%;
+}
+.subir:before {
+	content: '\f139';
+	font-size: 5rem;
+	right: 0;
+}
+/*
+----------------------- CSS DE MEDIA QUERIES -----------------------
+*/
+@media screen and (max-width: 885px){
+#logo {
+	float: none;
+	margin: 60px auto 20px auto;
+	max-width: 885px;
+	text-align: center;
+}
+.logo {
+	margin: 0 auto;
+}
+.links-topo {
+	float: none;
+	left: 0;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 885px;
+	position: absolute;
+	top: 5px;
+}
+}
+@media screen and (max-width: 860px){
+.rodape-linha1 {
+	align-items: center;
+	-webkit-flex-flow: column nowrap;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-flex-wrap: column;
+	-ms-flex-wrap: column;
+	flex-wrap: column;
+}
+}
+/*
+----------------------- CSS INFERIOR A 767px -----------------------
+*/
+@media screen and (max-width: 767px){
+	
+/* ANIMACAO DE TODOS OS ELEMENTOS */
+*{text-rendering: geometricPrecision;-webkit-transition: all ease .7s;-moz-transition: all ease .7s;transition: all ease .7s;}
+
+/* OCULTAR ELEMENTOS DE DESKTOP */
+.desktop{display: none !important;visibility: hidden !important;}
+
+/* CONTORNO DE LINKS EM MOBILE */
+a:focus{outline: none;}.
+
+/* EXIBIR ELEMENTOS DE MOBILE E EXIBIR EM BLOCO 100% */
+mobile{display: block !important;visibility: visible !important;}
+#topo,
+.topo {
+	margin-bottom: 0;
+}
+/* ESTRUTURA SECOES + ELEMENTOS */
+.mobile-topo {
+	background: #ffffff;
+	box-shadow: rgba(221, 221, 221, 0.329412) 0px 1px 5px 0px;
+	left: 0px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 51;
+}
+#logo-mobile {
+	float: left;
+	height: 46px;
+	margin-bottom: 13px;
+	margin-left: 15px;
+	margin-top: 2px;
+	max-width: 230px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	z-index: 51;
+}
+.logo-mobile {
+	max-width: 250px;
+	position: relative;
+	width: 100%;
+	z-index: 52;
+}
+.titulos-e-banners {
+	margin-top: 61px;
+}
+#titulos {
+	left: 0;
+	letter-spacing: -.1rem;
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding: 6px 2%;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+.titulos {
+	display: inline-block;
+	line-height: 1rem;
+	padding: 0;
+}
+.titulos h1,
+.titulos span {
+	font-size: 2.2rem;
+}
+.titulos h2 {
+	font-size: 2rem;
+}
+.titulos h3 {
+	font-size: 1.8rem;
+}
+.titulos h4 {
+	font-size: 1.6rem;
+}
+.titulos h5 {
+	font-size: 1.2rem;
+}
+.titulos h6 {
+	font-size: 1rem;
+}
+.titulos span:before, .titulos h1:before, .titulos h2:before, .titulos h3:before, .titulos h4:before, .titulos h5:before, .titulos h6:before {
+	bottom: -3px;
+	height: 2px;
+}
+.titulos span:after, .titulos h1:after, .titulos h2:after, .titulos h3:after, .titulos h4:after, .titulos h5:after, .titulos h6:after {
+	bottom: -8px;
+	height: 2px;
+}
+.corpo {
+	padding-top: 0;
+}
+.conteudos {
+	font-size: 1.45rem;
+	margin-top: 0;
+	min-height: 20px;
+	padding: 6px 2% 0px 2%;
+}
+.subir {
+	bottom: 10px;
+	opacity: .8;
+	width: 45px;
+}
+}
+@media screen and (max-width:510px) {
+.gosites {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+}
